@@ -1,0 +1,23 @@
+Steps for generating automatic email notification flow for any condition like Approved, Rejected, Submitted.
+
+1. Navigate to Manage Page.
+2. Navigate to Scripts.
+3. Click +Script.
+4. Populate the Name of the script.
+5. Select Action for the type then click Save.
+6. Enable the script by clicking the enable control.
+7. Click the newly created script.
+8. Create a new Email Template for the approved notification email using the action script. And create a script for the function to call the email.
+9. Again, navigate to Manage Page.
+10. Navigate to Actions.
+11. Create New Action.
+12. Populate the Name and Label. Choose Action Script for the Type. In the Script dropdown, select the appropriate script for the actions.
+13. Again, navigate to Manage Page.
+14. Create New Triggers.
+15. In the General tab. Populate the Name. In the objective dropdown, select Entity Creation and Entity Modification. And for the Execution type select In background.
+16. Navigate to Conditions tab. Click Add definition and choose Asset (M.Asset). Then add the conditions that was seen in the image below for the approve notification email.
+17. Navigate to Actions tab. Click add action and select the script that you created in Step 3.
+18. Click Save and close.
+19. Enable the enable notifications.
+20. Trigger the action script by creating an asset in Create navigation bar. Then click submit for approval for the asset. Go to Review navigation bar and approved the asset.
+
